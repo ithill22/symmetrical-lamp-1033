@@ -1,0 +1,10 @@
+<h1><%= @supermarket.name %></h1>
+<br>
+<section id= "supermarket-customer">
+<h2>Customers at <%= @supermarket.name %></h2>
+  <ul>
+    <% @customer_records.each do |customer| %>
+      <li><%= customer.name %></li>
+    <% end %>
+  </ul>
+</section>
