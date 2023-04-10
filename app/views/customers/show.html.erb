@@ -6,7 +6,7 @@
   <% @customer.items.each do |item| %>
     <li><%= item.name %>
     <%= "Price: #{item.price}" %><br>
-    <%= "Supermarket: #{item.supermarket.name}" %></li>
+    <%= "Supermarket: #{item.supermarket_name}" %></li>
   <% end %>
 </ul>
 </section>

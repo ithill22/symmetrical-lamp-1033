@@ -14,7 +14,7 @@ RSpec.describe 'Customer Show Page', type: :feature do
       expect(page).to have_content(@item_2.name)
       expect(page).to have_content(@item_1.price)
       expect(page).to have_content(@item_2.price)
-      expect(page).to have_content(@item_1.supermarket.name)
+      expect(page).to have_content(@item_1.supermarket_name)
     end
 
     it 'I see a form to add an item to the customer' do

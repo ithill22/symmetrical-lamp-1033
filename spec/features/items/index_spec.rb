@@ -11,13 +11,13 @@ RSpec.describe "Items Index Page", type: :feature do
 
       expect(page).to have_content(@item_1.name)
       expect(page).to have_content(@item_1.price)
-      expect(page).to have_content(@item_1.supermarket.name)
-      expect(page).to have_content(@item_1.customers.count)
+      expect(page).to have_content(@item_1.supermarket_name)
+      expect(page).to have_content(@item_1.customer_count)
 
       expect(page).to have_content(@item_2.name)
       expect(page).to have_content(@item_2.price)
-      expect(page).to have_content(@item_2.supermarket.name)
-      expect(page).to have_content(@item_2.customers.count)
+      expect(page).to have_content(@item_2.supermarket_name)
+      expect(page).to have_content(@item_2.customer_count)
     end
   end
 end

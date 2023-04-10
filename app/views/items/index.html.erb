@@ -5,8 +5,8 @@
     <% @items.each do |item| %>
       <li><%= item.name %><br> 
       <%= "Price: #{item.price}" %><br> 
-      <%= "Supermarket: #{item.supermarket.name}" %><br>
-      <%= "Times Purchased: #{item.customers.count}" %>
+      <%= "Supermarket: #{item.supermarket_name}" %><br>
+      <%= "Times Purchased: #{item.customer_count}" %>
       </li>
     <% end %>
   </ul>
