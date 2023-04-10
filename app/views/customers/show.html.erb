@@ -10,3 +10,12 @@
   <% end %>
 </ul>
 </section>
+<br>
+<section id="add-new-item">
+  <h2>Add New Item</h2>
+  <%= form_with model: @item, url: "/customers/#{@customer.id}", method: :post, local: true do |f| %>
+    <%= f.label :item_id, "Item ID" %>
+    <%= f.text_field :item_id %>
+    <%= f.submit "Submit" %>
+  <% end %>
+</section>
